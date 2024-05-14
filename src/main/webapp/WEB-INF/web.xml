@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>GestionPepeniereServlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>controllerPlant</display-name>
+    <servlet-name>controllerPlant</servlet-name>
+    <servlet-class>controller.controllerPlant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controllerPlant</servlet-name>
+    <url-pattern>/controllerPlant</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>modelPlant</display-name>
+    <servlet-name>modelPlant</servlet-name>
+    <servlet-class>model.modelPlant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>modelPlant</servlet-name>
+    <url-pattern>/modelPlant</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>viewServlet</display-name>
+    <servlet-name>viewServlet</servlet-name>
+    <servlet-class>view.viewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewServlet</servlet-name>
+    <url-pattern>/viewServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
